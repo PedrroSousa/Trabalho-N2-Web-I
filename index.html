@@ -1,14 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | WVP Games</title>
-    <link rel="shortcut icon" href="Assets/favicon.svg" type="image/x-icon">
-</head>
-<body>
-    <footer>
-        <p>&copy;2025 WVP Games, Inc. Todos os direitos reservados</p>
-    </footer>
-</body>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Home | WVP Games</title>
+        <link rel="shortcut icon" href="Assets/favicon.svg" type="image/x-icon">
+        <link rel="stylesheet" href="./Css/style.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="logo">WVP <span style="font-weight: lighter;">GAMES</span></div>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Jogos</a>
+                <a href="#">Feedback</a>
+                <a href="./pags/sobre.html">Sobre</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="slider">
+                <img src="Assets/wvp_caninde.webp" class="slide active" alt="Jogo Canindé">
+                <img src="Assets/wvp_itatira.webp" class="slide" alt="Jogo Itatira">
+                <img src="Assets/wvp_picross.webp" class="slide" alt="Jogo Picross">
+            </div>
+            <button><span>➜</span> Visite nossos jogos</button>
+        </section>
+
+        <h2 class="section-title">Nossos jogos</h2>
+        <section class="games-grid">
+            <div class="game-card">
+                <img src="./Assets/wvp_itatira.webp" alt="We Venture Past: Itatira">
+                <div class="overlay">
+                <a href="#">Feedback</a>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="./Assets/wvp_caninde.webp" alt="We Venture Past: Canindé">
+                <div class="overlay">
+                <a href="#">Feedback</a>
+                </div>
+            </div>
+            <div class="game-card">
+                <img src="./Assets/wvp_picross.webp" alt="WVP Picross">
+                <div class="overlay">
+                <a href="#">Feedback</a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-logo">WVP <span class="light">GAMES</span></div>
+                <div class="social-icons">
+                    <a href="#"><img src="./Assets/linkedin.svg" alt="LinkedIn"></a>
+                    <a href="#"><img src="./Assets/x.svg" alt="X"></a>
+                    <a href="#"><img src="./Assets/instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="./Assets/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="./Assets/youtube.svg" alt="YouTube"></a>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <span>© 2025 WVP Games, Inc. Todos os direitos reservados</span>
+                <a href="#">VOLTAR AO TOPO</a>
+            </div>
+        </footer>
+        <script>
+            let slides = document.querySelectorAll('.slide');
+            let current = 0;
+
+            setInterval(() => {
+                slides[current].classList.remove('active');
+                current = (current + 1) % slides.length;
+                slides[current].classList.add('active');
+            }, 4000); // troca a cada 4 segundos
+        </script>
+    </body>
 </html>
