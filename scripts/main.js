@@ -7,14 +7,21 @@ let slides = document.querySelectorAll('.slide');
         slides[current].classList.add('active');
     }, 4000);
 
-
-
 const menuToggle = document.querySelector('.menu-toggle');
 const navMenu = document.querySelector('.nav-menu');
+const icon = menuToggle.querySelector('i');
 const header = document.querySelector('.header');
 
-menuToggle.addEventListener('click', () => {
+  menuToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
+
+    if (navMenu.classList.contains('active')) {
+        icon.classList.remove('bi-list');
+        icon.classList.add('bi-x');
+    } else {
+        icon.classList.remove('bi-x');
+        icon.classList.add('bi-list');
+    }
 });
 
 window.addEventListener('scroll', () => {
@@ -24,4 +31,5 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
     }
 });
+
 

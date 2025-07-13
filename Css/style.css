@@ -236,12 +236,13 @@ h2.section-title {
     }
 
     .menu-toggle {
-    background: none;
+    background: rgba(49, 49, 49, 0.5);
     border: none;
+    border-radius: 0.4rem;
     font-size: 2rem;
     color: var(--white);
     cursor: pointer;
-    padding: 0;
+    padding: 2px;
     margin: 0;
     z-index: 1100;
     }
