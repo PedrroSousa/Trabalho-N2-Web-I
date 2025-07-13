@@ -1,11 +1,10 @@
 :root {
     --primary-purple: #873398;
     --primary-black: #1E1E1E;
-    --white: white;
+    --white: #ffffff;
     --secondary-black: #313131;
 }
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
     background-color: #000;
     color: white;
@@ -17,7 +16,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
-    background-color: #111;
+    background-color: var(--primary-black);
 }
 
 .logo {
@@ -42,7 +41,7 @@ nav a {
     align-items: center;
     gap: 0.75rem;
     background-color: var(--clr);
-    color: #fff;
+    color: var(--white);
     border-radius: 10rem;
     font-weight: 600;
     padding: 0.75rem 1.5rem;
@@ -59,7 +58,7 @@ nav a {
     height: 25px;
     position: relative;
     color: var(--clr);
-    background-color: #fff;
+    background-color: var(--white);
     border-radius: 50%;
     display: grid;
     place-items: center;
@@ -67,11 +66,11 @@ nav a {
 }
 
 .button:hover {
-    background-color: #000;
+    background-color: var(--primary-black);
 }
 
 .button:hover .button__icon-wrapper {
-    color: #000;
+    color: var(--primary-black);
 }
 
 .button__icon-svg--copy {
@@ -212,61 +211,122 @@ h2.section-title {
 @media (max-width: 767px) {
   /*----------------------------------MOBILE----------------------------------------*/
   
-  /*----------------------------------FOOTER----------------------------------------*/
+  /*----------------------------------HEADER----------------------------------------*/
   
-footer.footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 1.5rem 1rem;
-    font-family: sans-serif;
-}
-
-.footer-top {
+    .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: var(--white);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    }
+
+    .logo img {
+    width: 60px;
+    height: auto;
+    }
+
+    .menu-toggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--white);
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    z-index: 1100;
+    }
+
+    .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-black);
+    display: none;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-}
+    padding: 1rem 0;
+    }
 
-.footer-logo img {
-    width: 3.75rem;
-    height: auto;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-}
-
-.social-icons a img {
-    width: 1.25rem;
-    height: 1.25rem;
-}
-
-footer hr {
-    border: none;
-    border-top: 1px solid #444;
-    margin: 1rem 0;
-}
-
-.footer-bottom span {
-    display: block;
-    font-size: 0.75rem;
-    margin-bottom: 1rem;
-}
-
-.footer-bottom a {
-    color: white;
-    font-size: 0.75rem;
+    .nav-menu a {
+    color: var(--white);
     text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.25rem;
-    vertical-align: middle;
-}
+    padding: 0.75rem 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    }
+
+    /* será usada com JS depois*/
+    .nav-menu.active {
+    display: flex;
+    }
+
+  
+  /*----------------------------------FOOTER----------------------------------------*/
+  
+    footer.footer {
+        background-color: #222;
+        color: var(--white);
+        text-align: center;
+        padding: 1.5rem 1rem;
+        font-family: sans-serif;
+    }
+
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .footer-logo img {
+        width: 3.75rem;
+        height: auto;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+    }
+
+    .social-icons a img {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    footer hr {
+        border: none;
+        border-top: 1px solid #444;
+        margin: 1rem 0;
+    }
+
+    .footer-bottom span {
+        display: block;
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer-bottom a {
+        color: var(--white);
+        font-size: 0.75rem;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.25rem;
+        vertical-align: middle;
+    }
 }
 
