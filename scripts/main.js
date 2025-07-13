@@ -22,6 +22,7 @@ const header = document.querySelector('.header');
         icon.classList.remove('bi-x');
         icon.classList.add('bi-list');
     }
+
 });
 
 window.addEventListener('scroll', () => {
