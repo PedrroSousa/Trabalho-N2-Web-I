@@ -3,6 +3,7 @@
     --primary-black: #1E1E1E;
     --white: #ffffff;
     --secondary-black: #313131;
+    --color-bg: #0F0F0F;
 }
 body {
     font-family: Arial, sans-serif;
@@ -266,11 +267,14 @@ h2.section-title {
     font-size: 1rem;
     }
 
+    .header.scrolled {
+    background-color: var(--primary-black);
+}
+
     /* será usada com JS depois*/
     .nav-menu.active {
     display: flex;
     }
-
   
   /*----------------------------------FOOTER----------------------------------------*/
   
