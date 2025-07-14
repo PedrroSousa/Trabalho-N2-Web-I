@@ -302,7 +302,7 @@ body {
         background-color: transparent;
         color: var(--white);
         z-index: 1000;
-        transition: background-color 0.3s ease;
+        transition: background-color;
         box-sizing: border-box;
     }
 
@@ -315,11 +315,11 @@ body {
         display: block;
         background: rgba(49, 49, 49, 0.5);
         border: none;
-        border-radius: 0.4rem;
-        font-size: 2rem;
+        border-radius: 1rem;
+        font-size: 1.5rem;
         color: var(--white);
         cursor: pointer;
-        padding: 2px;
+        padding: 10px;
         margin: 0;
         z-index: 1100;
     }
