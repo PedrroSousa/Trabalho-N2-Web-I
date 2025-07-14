@@ -6,6 +6,11 @@
     --color-bg: #0F0F0F;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     background-color: #000;
@@ -16,12 +21,24 @@ body {
 @media (min-width: 767PX){
     /*----------------------------------DESKTOP----------------------------------------*/
 
-    header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px;
-    background-color: var(--primary-black);
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        color: var(--white);
+        z-index: 1000;
+        transition: background-color;
+        box-sizing: border-box;
+    }
+
+    .header.scrolled {
+        background-color: var(--primary-black);
     }
 
     .menu-toggle {
@@ -109,7 +126,6 @@ body {
         align-items: center;
         text-align: center;
         width: 100vw;
-        /* garante que ocupe 100% da viewport */
         max-width: 100%;
     }
 
@@ -136,7 +152,6 @@ body {
         height: 100%;
         object-fit: cover;
         object-position: center top;
-        /* prioriza o topo da imagem */
         opacity: 0;
         transition: opacity 1s ease-in-out;
     }
@@ -220,7 +235,7 @@ body {
         font-weight: bold;
     }
 
-    /*------------------FOOTER----------------*/
+    /*-----------------------FOOTER----------------------*/
 
     .footer {
         background-color: #1e1e1e;
@@ -284,6 +299,8 @@ body {
     }
 
 }
+
+/*---------------------------------------------------------------------------------------------------*/
     
 @media (max-width: 767px) {
     /*----------------------------------MOBILE----------------------------------------*/
@@ -349,7 +366,6 @@ body {
         background-color: var(--primary-black);
     }
 
-    /* será usada com JS depois*/
     .nav-menu.active {
         display: flex;
     }
@@ -365,7 +381,6 @@ body {
         align-items: center;
         text-align: center;
         width: 100vw;
-        /* garante que ocupe 100% da viewport */
         max-width: 100%;
     }
 
@@ -392,7 +407,6 @@ body {
         height: 100%;
         object-fit: cover;
         object-position: center top;
-        /* prioriza o topo da imagem */
         opacity: 0;
         transition: opacity 1s ease-in-out;
     }

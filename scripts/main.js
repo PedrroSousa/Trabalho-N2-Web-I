@@ -7,6 +7,8 @@ let slides = document.querySelectorAll('.slide');
         slides[current].classList.add('active');
     }, 4000);
 
+/* ------------------------------------------------------------------ */
+
 const menuToggle = document.querySelector('.menu-toggle');
 const navMenu = document.querySelector('.nav-menu');
 const icon = menuToggle.querySelector('i');
@@ -41,9 +43,34 @@ window.addEventListener('scroll', () => {
     if (window.scrollY > 0) {
         header.classList.add('scrolled');
     } else if (!navMenu.classList.contains('active')) {
-        // Só remove se o menu estiver fechado
         header.classList.remove('scrolled');
-    }   
+    }
 });
 
+/*------------------------------------------------------------------------------*/
 
+document.querySelectorAll('.nav-menu a[href^="#"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const targetId = link.getAttribute('href');
+    const target = document.querySelector(targetId);
+
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    navMenu.classList.remove('active');
+    icon.classList.remove('bi-x');
+    icon.classList.add('bi-list');
+    document.body.classList.remove('menu-open');
+
+    if (window.scrollY === 0) {
+      header.classList.remove('scrolled');
+    }
+  });
+});
+
+document.getElementById('btn-jogos').addEventListener('click', () => {
+  window.location.href = 'https://wvp-games.itch.io/';
+});
