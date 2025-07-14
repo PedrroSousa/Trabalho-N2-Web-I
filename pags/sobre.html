@@ -16,20 +16,28 @@
 <body>
 
     <header class="header">
-            <div class="logo">
-                <a href="../index.html"><img src="../Assets/WVP GAMES_logo.svg" alt="Logo"></a>
+        <div class="logo">
+            <a href="../index.html"><img src="../Assets/WVP GAMES_logo.svg" alt="Logo"></a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir menu">
+            <span><i class="bi bi-list"></i></span>
+        </button>
+
+        <nav class="nav-menu">
+            <a href="../index.html#games">Jogos</a>
+
+            <button id="feedback-button" class="feedback-button">Feedback<span></span><i
+                    class="bi bi-caret-down-fill"></i></button>
+            <div id="feedback-links" class="feedback-links">
+                <a href="./card1.html">WVP Itatira</a>
+                <a href="./card2.html">WVP Canindé</a>
+                <a href="./card3.html">WVP Picross</a>
             </div>
 
-            <button class="menu-toggle" aria-label="Abrir menu">
-                <span><i class="bi bi-list"></i></span>
-            </button>
-
-            <nav class="nav-menu">
-                <a href="../index.html#games">Jogos</a>
-                <a href="#">Feedback</a>
-                <a href="#">Sobre</a>
-            </nav>
-        </header>
+            <a href="../pags/sobre.html">Sobre</a>
+        </nav>
+    </header>
 
     <section id="sobre">
         <div class="sobre-header">
@@ -38,7 +46,7 @@
 
         <div class="sobre-container">
             <h3 class="equipe-title">EQUIPE WVP GAMES</h3>
-           <div class="equipe-grid">
+            <div class="equipe-grid">
                 <div>
                     <div class="membro">
                         <img src="../Assets/wesley.webp" alt="Integrante 1">
