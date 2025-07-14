@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WVP: Picross | WVP Games</title>
+
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/card.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/WVP GAMES_logo.svg" alt="Logo"></a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir menu">
+            <span><i class="bi bi-list"></i></span>
+        </button>
+
+        <nav class="nav-menu">
+            <a href="#">Jogos</a>
+            <a href="#">Feedback</a>
+            <a href="../pags/sobre.html">Sobre</a>
+        </nav>
+    </header>
+    <section class="apres">
+        <div class="img-jogo">
+            <img src="../assets/wvp_picross.webp" alt="Jogo Itatira">
+        </div>
+    </section>
+
+    <h1 class="titulo">Feedback</h1>
+    <div class="feedback-step1">
+        <select id="category-select">
+            <option value="">Categoria de feedback</option>
+            <option value="bug">Bug</option>
+            <option value="instalacao">Instalação</option>
+            <option value="performance">Performance</option>
+            <option value="outro">Outro</option>
+        </select>
+    </div>
+
+    <div class="feedback-form" style="display: none;">
+        <form>
+            <label>Plataforma</label>
+            <select required>
+                <option>-</option>
+                <option>PC</option>
+                <option>Mobile</option>
+            </select>
+
+            <label>Descrição</label>
+            <input type="text" required placeholder="Descreva o feedback aqui...">
+
+            <label>Nome</label>
+            <input type="text" required />
+
+            <label>Email</label>
+            <input type="email" required />
+
+            <label>Anexo</label>
+            <input type="file" />
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <div id="agradecimento" style="display: none;" class="agradecimento">
+        <p>Agradecemos seu feedback!</p>
+    </div>
+
+
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="footer-logo"><img src="../assets/WVP GAMES_logo.svg" alt=""></div>
+            <div class="social-icons">
+                <a href="#"><img src="../assets/linkedin.svg" alt="LinkedIn"></a>
+                <a href="#"><img src="../assets/x.svg" alt="X"></a>
+                <a href="#"><img src="../assets/instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="../assets/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="../assets/youtube.svg" alt="YouTube"></a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <span>&copy; 2025 WVP Games, Inc. Todos os direitos reservados</span>
+            <hr class="line" />
+            <a href="#">VOLTAR AO TOPO <span><i class="bi bi-caret-up-fill"></i></span></a>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/card.js"></script>
+
+</body>
+
+</html>
