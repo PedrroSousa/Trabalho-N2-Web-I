@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 #sobre {
     background-color: #000;
     color: white;
@@ -62,6 +63,13 @@
     /* evita fundos brancos em PNGs */
 }
 
+.nome-membro {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+}
+
 
 .pixel-chars {
     display: flex;
@@ -113,4 +121,3 @@
     display: block;
     flex-direction: row;
 }
-
