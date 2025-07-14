@@ -26,7 +26,7 @@ body {
         top: 0;
         left: 0;
         width: 100%;
-        padding: 20px 60px;
+        padding: 1.25rem 3.75rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -46,12 +46,12 @@ body {
     }
 
     .logo {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: bold;
     }
 
     nav a {
-        margin-left: 30px;
+        margin-left: 1.875rem;
         color: white;
         text-decoration: none;
     }
@@ -71,17 +71,19 @@ body {
         border-radius: 10rem;
         font-weight: 600;
         padding: 0.75rem 1.5rem;
-        padding-left: 20px;
+        padding-left: 1.25rem;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         transition: background-color 0.3s;
+
+        margin-top: 18.75rem;
     }
 
     .button__icon-wrapper {
         flex-shrink: 0;
-        width: 33px;
-        height: 33px;
+        width: 2.063rem;
+        height: 2.063rem;
         position: relative;
         color: var(--clr);
         background-color: var(--white);
@@ -119,7 +121,7 @@ body {
 
     .hero {
         position: relative;
-        height: 450px;
+        height: 28.125rem;
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -167,11 +169,11 @@ body {
         color: white;
         font-size: 1.1rem;
         border: none;
-        border-radius: 15px;
+        border-radius: 0.938rem;
         cursor: pointer;
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 0.625rem;
         max-width: 90%;
         white-space: nowrap;
         flex-shrink: 1;
@@ -180,23 +182,25 @@ body {
 
     h2.section-title {
         text-align: center;
-        margin: 60px 0 20px;
-        font-size: 36px;
+        margin: 3.75rem 0 1.25rem;
+        font-size: 2.25rem;
     }
 
     .games-grid {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 30px;  
+        gap: 1.875rem;  
         width: 100%;
+
+        margin: 2.5rem 0 2.5rem 0;
     }
 
     .game-card {
         position: relative;
         width: 100%;
         max-width: 625px;
-        height: 400px;
+        height: 25rem;
         aspect-ratio: 16 / 9;
         overflow: hidden;
         border-radius: 12px;
@@ -230,11 +234,11 @@ body {
     }
 
     .overlay a {
-        padding: 10px 20px;
+        padding: 0.625rem 1.25rem;
         background-color: white;
         color: black;
         text-decoration: none;
-        border-radius: 20px;
+        border-radius: 1.25rem;
         font-weight: bold;
     }
 
@@ -243,8 +247,8 @@ body {
     .footer {
         background-color: #1e1e1e;
         color: #ccc;
-        padding: 30px 60px;
-        font-size: 14px;
+        padding: 1.875rem 3.75rem;
+        font-size: 0.875rem;
     }
 
     .footer-top {
@@ -255,7 +259,7 @@ body {
     }
 
     .footer-logo {
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: bold;
     }
 
@@ -264,13 +268,13 @@ body {
     }
 
     .social-icons a {
-        margin-left: 15px;
+        margin-left: 0.938rem;
         display: inline-block;
     }
 
     .social-icons img {
-        width: 20px;
-        height: 20px;
+        width: 1.25rem;
+        height: 1.25rem;
         transition: opacity 0.2s;
     }
 
@@ -280,8 +284,8 @@ body {
 
     .footer hr {
         border: none;
-        border-top: 1px solid #555;
-        margin: 20px 0;
+        border-top: 0.063rem solid #555;
+        margin: 1.25rem 0;
     }
 
     .footer-bottom {
@@ -294,7 +298,7 @@ body {
     .footer-bottom a {
         color: #ccc;
         text-decoration: none;
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     .footer-bottom a:hover {
@@ -324,10 +328,11 @@ body {
         z-index: 1000;
         transition: background-color;
         box-sizing: border-box;
+
     }
 
     .logo img {
-        width: 60px;
+        width: 3.75rem;
         height: auto;
     }
 
@@ -339,7 +344,7 @@ body {
         font-size: 1.5rem;
         color: var(--white);
         cursor: pointer;
-        padding: 10px;
+        padding: 0.625rem;
         margin: 0;
         z-index: 1100;
     }
@@ -377,7 +382,7 @@ body {
 
     .hero {
         position: relative;
-        height: 450px;
+        height: 28.125rem;
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -425,11 +430,11 @@ body {
         color: white;
         font-size: 1.1rem;
         border: none;
-        border-radius: 15px;
+        border-radius: 0.938rem;
         cursor: pointer;
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 0.625rem;
         max-width: 90%;
         white-space: nowrap;
         flex-shrink: 1;
@@ -438,24 +443,24 @@ body {
 
     h2.section-title {
         text-align: center;
-        margin: 60px 0 20px;
-        font-size: 24px;
+        margin: 3.75rem 0 1.25rem;
+        font-size: 1.5rem;
     }
 
     .games-grid {
         display: flex;
         justify-content: center;
-        gap: 30px;
-        padding: 0 60px 60px;
+        gap: 1.875rem;
+        padding: 0 3.75rem 3.75rem;
         flex-wrap: wrap;
     }
 
     .game-card {
         position: relative;
-        width: 300px;
-        height: 200px;
+        width: 18.75rem;
+        height: 12.5rem;
         overflow: hidden;
-        border-radius: 12px;
+        border-radius: 0.75rem;
         cursor: pointer;
     }
 
@@ -485,11 +490,11 @@ body {
     }
 
     .overlay a {
-        padding: 10px 20px;
+        padding: 0.625rem 1.25rem;
         background-color: white;
         color: black;
         text-decoration: none;
-        border-radius: 20px;
+        border-radius: 1.25rem;
         font-weight: bold;
     }
 
@@ -508,17 +513,19 @@ body {
         border-radius: 10rem;
         font-weight: 600;
         padding: 0.75rem 1.5rem;
-        padding-left: 20px;
+        padding-left: 1.25rem;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         transition: background-color 0.3s;
+
+        margin-top: 300px;
     }
 
     .button__icon-wrapper {
         flex-shrink: 0;
-        width: 33px;
-        height: 33px;
+        width: 2.063rem;
+        height: 2.063rem;
         position: relative;
         color: var(--clr);
         background-color: var(--white);
@@ -587,7 +594,7 @@ body {
 
     footer hr {
         border: none;
-        border-top: 1px solid #444;
+        border-top: 0.063rem solid #444;
         margin: 1rem 0;
     }
 
