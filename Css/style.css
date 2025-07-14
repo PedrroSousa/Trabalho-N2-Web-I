@@ -18,7 +18,7 @@ body {
     overflow-x: hidden;
 }
 
-@media (min-width: 767PX){
+@media (min-width: 767PX) {
     /*----------------------------------DESKTOP----------------------------------------*/
 
     .header {
@@ -186,19 +186,22 @@ body {
 
     .games-grid {
         display: flex;
-        justify-content: center;
-        gap: 30px;
-        padding: 0 60px 60px;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;  
+        width: 100%;
     }
 
     .game-card {
         position: relative;
-        width: 300px;
-        height: 200px;
+        width: 100%;
+        max-width: 625px;
+        height: 400px;
+        aspect-ratio: 16 / 9;
         overflow: hidden;
         border-radius: 12px;
         cursor: pointer;
+        margin: 0 auto;
     }
 
     .game-card img {
@@ -301,7 +304,7 @@ body {
 }
 
 /*---------------------------------------------------------------------------------------------------*/
-    
+
 @media (max-width: 767px) {
     /*----------------------------------MOBILE----------------------------------------*/
 
@@ -371,7 +374,7 @@ body {
     }
 
     /*----------------------------------MAIN----------------------------------------*/
-    
+
     .hero {
         position: relative;
         height: 450px;
@@ -491,7 +494,7 @@ body {
     }
 
     /*----------------------------------BOTÂO EXPLORE----------------------------------------*/
-    
+
     .button {
         line-height: 1;
         text-decoration: none;
@@ -511,7 +514,7 @@ body {
         text-overflow: ellipsis;
         transition: background-color 0.3s;
     }
-    
+
     .button__icon-wrapper {
         flex-shrink: 0;
         width: 33px;
@@ -524,32 +527,32 @@ body {
         place-items: center;
         overflow: hidden;
     }
-    
+
     .button:hover {
         background-color: var(--primary-black);
     }
-    
+
     .button__icon-svg--copy {
         position: absolute;
         transform: translate(-150%, 150%);
     }
-    
+
     .button:hover .button__icon-svg:first-child {
         transition: transform 0.3s ease-in-out;
         transform: translate(150%, -150%);
     }
-    
+
     .button:hover .button__icon-svg--copy {
         transition: transform 0.3s ease-in-out 0.1s;
         transform: translate(0);
     }
-    
-    /*----------------------------------BOTÂO EXPLORE----------------------------------------*/
-    
 
-    
+    /*----------------------------------BOTÂO EXPLORE----------------------------------------*/
+
+
+
     /*----------------------------------FOOTER----------------------------------------*/
-    
+
     .footer {
         background-color: #222;
         color: var(--white);
