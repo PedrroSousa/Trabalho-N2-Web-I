@@ -33,6 +33,9 @@ form.addEventListener("submit", async function (event) {
     const nome = document.getElementById('nome').value;
     const email = form.querySelector('input[type="email"]').value;
     const categoria = categorySelect.value;
+    const arquivoInput = document.getElementById("anexo");
+    const arquivo = arquivoInput.files[0];
+    const nomeArquivo = arquivo ? arquivo.name : null;
 
     // Monta o objeto para envio
     const feedback = {
@@ -41,7 +44,8 @@ form.addEventListener("submit", async function (event) {
         categoria,
         plataforma,
         descricao,
-        jogo: nomeJogo
+        jogo: nomeJogo,
+        anexo: nomeArquivo
     };
 
     try {
