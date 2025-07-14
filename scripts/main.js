@@ -47,6 +47,28 @@ window.addEventListener('scroll', () => {
     }
 });
 
+/* ---------------------------------feedback nav menu---------------------------------------------- */
+
+const feedbackBtn = document.getElementById('feedback-button');
+const feedbackLinks = document.getElementById('feedback-links');
+const feedbackIcon = feedbackBtn.querySelector('i');
+
+feedbackBtn.addEventListener('click', () => {
+    feedbackLinks.classList.toggle('active');
+
+    if (feedbackLinks.classList.contains('active')) {
+        feedbackIcon.classList.remove('bi-caret-down-fill');
+        feedbackIcon.classList.add('bi-caret-up-fill');
+    } else {
+        feedbackIcon.classList.remove('bi-caret-up-fill');
+        feedbackIcon.classList.add('bi-caret-down-fill');
+    }
+
+});
+
+
+
+
 /*------------------------------------------------------------------------------*/
 
 document.querySelectorAll('.nav-menu a[href^="#"]').forEach(link => {

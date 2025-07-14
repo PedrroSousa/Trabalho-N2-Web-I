@@ -16,7 +16,7 @@
 
 <body>
 
-    <header class="header">
+    <header class="header" class="card2">
         <div class="logo">
             <a href="../index.html"><img src="../Assets/WVP GAMES_logo.svg" alt="Logo"></a>
         </div>
@@ -27,13 +27,23 @@
 
         <nav class="nav-menu">
             <a href="../index.html#games">Jogos</a>
-            <a href="#">Feedback</a>
+
+            <button id="feedback-button" class="feedback-button">Feedback<span></span><i class="bi bi-caret-down-fill"></i></button>
+            <div id="feedback-links" class="feedback-links">
+                <a href="./card1.html">WVP Itatira</a>
+                <a href="#">WVP Canindé</a>
+                <a href="./card3.html">WVP Picross</a>
+            </div>
+
             <a href="../pags/sobre.html">Sobre</a>
         </nav>
     </header>
     <section class="apres">
         <div class="img-jogo">
-            <img src="../Assets/wvp_caninde.png" alt="Jogo Itatira">
+            <picture>
+            <source srcset="/Assets/wvp_caninde_banner.png" media="(min-width: 768px)">
+            <img src="/Assets/wvp_caninde.png" alt="..." class="img-mobile">
+            </picture>
         </div>
     </section>
 

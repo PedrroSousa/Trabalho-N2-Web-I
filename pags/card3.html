@@ -27,13 +27,24 @@
 
         <nav class="nav-menu">
             <a href="../index.html#games">Jogos</a>
-            <a href="#">Feedback</a>
+
+            <button id="feedback-button" class="feedback-button">Feedback<span></span><i class="bi bi-caret-down-fill"></i></button>
+            <div id="feedback-links" class="feedback-links">
+                <a href="./card1.html">WVP Itatira</a>
+                <a href="./card2.html">WVP Canindé</a>
+                <a href="#">WVP Picross</a>
+            </div>
+
             <a href="../pags/sobre.html">Sobre</a>
         </nav>
     </header>
+
     <section class="apres">
         <div class="img-jogo">
-            <img src="../Assets/wvp_picross.webp" alt="Jogo Itatira">
+            <picture>
+            <source srcset="/Assets/wvp_picross_banner.png" media="(min-width: 768px)">
+            <img src="/Assets/wvp_picross.webp" alt="..." class="img-mobile">
+            </picture>
         </div>
     </section>
 
