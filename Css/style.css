@@ -248,6 +248,7 @@ body {
     .social-icons a {
         margin-left: 15px;
         display: inline-block;
+        transition: color 0.2s ease;
     }
 
     .social-icons img {
