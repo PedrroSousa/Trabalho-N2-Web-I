@@ -40,9 +40,22 @@
         <section id="card-slider" class="hero">
 
             <div class="slider">
-                <img src="Assets/wvp_caninde_banner.png" class="slide active" alt="Jogo Canindé">
-                <img src="Assets/wvp_itatira_banner.png" class="slide" alt="Jogo Itatira">
-                <img src="Assets/wvp_picross_banner.png" class="slide" alt="Jogo Picross">
+                
+                <picture class="slide active">
+                    <source srcset="Assets/wvp_caninde_banner.png" media="(min-width: 768px)">
+                    <img src="Assets/wvp_caninde.png" alt="Jogo Canindé">
+                </picture>
+
+                <picture class="slide">
+                    <source srcset="Assets/wvp_itatira_banner.png" media="(min-width: 768px)">
+                    <img src="Assets/wvp_itatira.webp" alt="Jogo Itatira">
+                </picture>
+
+                <picture class="slide">
+                    <source srcset="Assets/wvp_picross_banner.png" media="(min-width: 768px)">
+                    <img src="Assets/wvp_picross.webp" alt="Jogo Picross">
+                </picture>
+
             </div>
 
         <button id="btn-jogos" class="button" style="--clr: #873398">

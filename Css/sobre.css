@@ -49,12 +49,10 @@
     width: 180px;
     height: 280px;
     object-fit: cover;
-    /* mostra o centro da imagem sem distorcer */
     object-position: center;
     border-radius: 12px;
     border: 2px solid white;
     background-color: #000;
-    /* evita fundos brancos em PNGs */
 }
 
 .nome-membro {
